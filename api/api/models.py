@@ -14,7 +14,7 @@ class Person(Base):
 
 
 class VisitOccurrence(Base):
-    __tablename__ = "visit_ocurrence"
+    __tablename__ = "visit_occurrence"
 
     visit_occurrence_id = Column(Integer, primary_key=True)
     person_id = Column(Integer, nullable=False)
@@ -41,7 +41,7 @@ class DrugExposure(Base):
     drug_concept_id = Column(Integer, nullable=False)
     drug_exposure_start_datetime = Column(DateTime, nullable=False)
     drug_exposure_end_datetime = Column(DateTime, nullable=False)
-    visit_ocurrence_id = Column(Integer, nullable=False)
+    visit_occurrence_id = Column(Integer, nullable=False)
 
 
 class Concept(Base):
