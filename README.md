@@ -41,3 +41,11 @@ docker-compose exec api alembic upgrade head
 ### 3.2. Table 불러오기
 지정된 이름의 파일로부터 데이터를 가져옵니다.  
 (현재 여기부터 미구현입니다.)
+
+### 3.3. DB에 직접 접근하고 싶은 경우
+db 컨테이너에서 직접 psql을 실행할 수 있습니다.  
+username와 database는 docker-compose.yml에서 환경변수로 설정되어 있습니다.  
+아래와 같이 접속하면 됩니다.
+```
+docker-compose exec db psql -U api -d data
+```
