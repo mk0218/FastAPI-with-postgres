@@ -49,3 +49,5 @@ username와 database는 docker-compose.yml에서 환경변수로 설정되어 �
 ```
 docker-compose exec db psql -U api -d data
 ```
+다만 db 서비스를 정의할 때 port export를 하지 않아 외부에서는 데이터베이스에 직접 접근할 수 없습니다.  
+컨테이너끼리는 같은 도커 네트워크에 속해 있어 서로 서비스이름(api, db)을 이용해 접근합니다.
