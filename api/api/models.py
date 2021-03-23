@@ -36,6 +36,7 @@ class ConditionOccurrence(Base):
 class DrugExposure(Base):
     __tablename__ = "drug_exposure"
 
+    drug_exposure_id = Column(Integer, primary_key=True)
     person_id = Column(Integer, nullable=False)
     drug_concept_id = Column(Integer, nullable=False)
     drug_exposure_start_datetime = Column(DateTime, nullable=False)
@@ -46,7 +47,7 @@ class DrugExposure(Base):
 class Concept(Base):
     __tablename__ = "concept"
 
-    concept_id = Column(Integer, nullable=False)
+    concept_id = Column(Integer, primary_key=True)
     concept_name = Column(String, nullable=False)
     domain_id = Column(String, nullable=False)
 
@@ -54,5 +55,5 @@ class Concept(Base):
 class Death(Base):
     __tablename__ = "death"
 
-    person_id = Column(Integer, nullable=False)
+    person_id = Column(Integer, primary_key=True)
     death_date = Column(DateTime, nullable=False)

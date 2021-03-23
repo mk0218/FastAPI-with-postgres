@@ -7,7 +7,7 @@ DATABASE_USERNAME = environ.get('DATABASE_USERNAME', 'postgres')
 DATABASE_PASSWORD = environ.get('DATABASE_PASSWORD', 'postgres')
 DATABASE_URL = environ.get('DATABASE_URL', 'db')
 DATABASE_PORT = environ.get('DATABASE_PORT', 5432)
-DATABASE_NAME = environ.get('DATABASE_NAME', 'db')
+DATABASE_NAME = environ.get('DATABASE_NAME', 'data')
 
 SQLALCHEMY_DATABASE_URL = f"postgresql://{DATABASE_USERNAME}\
                             :{DATABASE_PASSWORD}@{DATABASE_URL}\
