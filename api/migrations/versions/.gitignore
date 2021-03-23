@@ -1,0 +1,5 @@
+# Ignore any file in this directory
+*
+# Except .gitignore and initial revision
+!.gitignore
+!.*_initial.py
