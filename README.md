@@ -1,2 +1,4 @@
 # expert-potato
-potato
+```
+docker-compose up
+```
