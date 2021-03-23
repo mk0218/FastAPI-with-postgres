@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_USERNAME = environ.get('DATABASE_USERNAME', 'postgres')
+DATABASE_USERNAME = environ.get('DATABASE_USERNAME', 'api')
 DATABASE_PASSWORD = environ.get('DATABASE_PASSWORD', 'postgres')
 DATABASE_URL = environ.get('DATABASE_URL', 'db')
 DATABASE_PORT = environ.get('DATABASE_PORT', 5432)

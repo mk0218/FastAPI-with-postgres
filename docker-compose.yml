@@ -11,7 +11,7 @@ services:
     depends_on:
       - db
     environment:
-      - DATABASE_USER=postgres
+      - DATABASE_USER=api
       - DATABASE_PASSWORD=postgres
       - DATABASE_URL=db
       - DATABASE_PORT=5432
@@ -29,7 +29,7 @@ services:
     image: postgres:13
     environment:
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_USER=postgres
+      - POSTGRES_USER=api
       - POSTGRES_DB=data
     restart: always
     volumes:
