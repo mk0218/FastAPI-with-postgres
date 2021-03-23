@@ -12,7 +12,7 @@ services:
       - db
     command: uvicorn main:app --reload --host 0.0.0.0 --port 8000
     stdin_open: true
-    tts: true
+    tty: true
     restart: always
     ports:
       - "12321:8000"
