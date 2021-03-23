@@ -1,4 +1,6 @@
-db/data
+/.vscode
+
+# db/data
 /data
 
 # Byte-compiled / optimized / DLL files
