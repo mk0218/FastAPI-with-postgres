@@ -2,4 +2,3 @@
 *
 # Except .gitignore and initial revision
 !.gitignore
-!.*_initial.py
